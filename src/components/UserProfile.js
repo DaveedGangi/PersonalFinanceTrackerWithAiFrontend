@@ -55,8 +55,8 @@ function UserProfile() {
     
     <div className="profile-container">
       <div className="profile-sidebar">
-        {user.picture && (
-          <img src={user.picture} alt="Profile" className="profile-picture" />
+        {user.avatar && (
+          <img src={user.avatar} alt="Profile" className="profile-picture" />
         )}
         <h1 className="profile-name">Welcome, {user.name}</h1>
         <p className="profile-email">{user.email}</p>

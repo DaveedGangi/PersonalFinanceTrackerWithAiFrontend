@@ -35,8 +35,8 @@ const Dashboard = () => {
       <Navbar />
       <div className="dashboard-content">
         <div className="dashboard-header">
-          {user.picture && (
-            <img src={user.picture} alt="avatar" className="user-avatar" />
+          {user.avatar && (
+            <img src={user.avatar} alt="avatar" className="user-avatar" />
           )}
           <div className="user-info">
             <h1 className="welcome-title">Welcome, {user.name}</h1>
