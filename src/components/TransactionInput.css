@@ -1,0 +1,116 @@
+/* TransactionInput.css */
+.transaction-input-container {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transaction-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transaction-input-field {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.transaction-input-field:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.transaction-input-field::placeholder {
+  color: #9ca3af;
+}
+
+.transaction-submit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+}
+
+.transaction-submit-btn:hover {
+  background-color: #2563eb;
+}
+
+.transaction-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.transaction-submit-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Alert styles */
+.transaction-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+.transaction-alert.success {
+  background-color: #10b981;
+}
+
+.transaction-alert.error {
+  background-color: #ef4444;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .transaction-input-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .transaction-input-form {
+    gap: 0.75rem;
+  }
+  
+  .transaction-input-field {
+    padding: 0.625rem 0.875rem;
+  }
+  
+  .transaction-submit-btn {
+    padding: 0.625rem 1.25rem;
+    align-self: stretch;
+    text-align: center;
+  }
+}

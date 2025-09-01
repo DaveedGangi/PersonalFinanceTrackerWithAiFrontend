@@ -1,0 +1,39 @@
+/* src/components/Login.css */
+
+.login-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+.google-login-button {
+  background: #4285f4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.google-login-button:hover {
+  background: #357ae8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
